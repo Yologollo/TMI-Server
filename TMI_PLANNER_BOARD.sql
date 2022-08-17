@@ -1,0 +1,49 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 목요일-8월-18-2022   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table TMI_PLANNER_BOARD
+--------------------------------------------------------
+
+  CREATE TABLE "ADMIN"."TMI_PLANNER_BOARD" 
+   (	"PB_NO" NUMBER, 
+	"PB_P_NO" NUMBER, 
+	"PB_M_EMAIL" VARCHAR2(256 BYTE) COLLATE "USING_NLS_COMP", 
+	"PB_TITLE" VARCHAR2(2000 BYTE) COLLATE "USING_NLS_COMP", 
+	"PB_CREATED_AT" DATE DEFAULT sysdate, 
+	"PB_UPDATED_AT" DATE DEFAULT sysdate, 
+	"PB_READ_COUNT" NUMBER DEFAULT 0, 
+	"PB_CONTENT" CLOB COLLATE "USING_NLS_COMP"
+   )  DEFAULT COLLATION "USING_NLS_COMP" SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 10 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  TABLESPACE "DATA" 
+ LOB ("PB_CONTENT") STORE AS SECUREFILE (
+  TABLESPACE "DATA" ENABLE STORAGE IN ROW CHUNK 8192
+  NOCACHE LOGGING  NOCOMPRESS  KEEP_DUPLICATES ) ;
+REM INSERTING into ADMIN.TMI_PLANNER_BOARD
+SET DEFINE OFF;
+--------------------------------------------------------
+--  DDL for Index PK_PB_NO
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "ADMIN"."PK_PB_NO" ON "ADMIN"."TMI_PLANNER_BOARD" ("PB_NO") 
+  PCTFREE 10 INITRANS 20 MAXTRANS 255 
+  TABLESPACE "DATA" ;
+--------------------------------------------------------
+--  Constraints for Table TMI_PLANNER_BOARD
+--------------------------------------------------------
+
+  ALTER TABLE "ADMIN"."TMI_PLANNER_BOARD" MODIFY ("PB_P_NO" NOT NULL ENABLE);
+  ALTER TABLE "ADMIN"."TMI_PLANNER_BOARD" MODIFY ("PB_M_EMAIL" NOT NULL ENABLE);
+  ALTER TABLE "ADMIN"."TMI_PLANNER_BOARD" ADD CONSTRAINT "PK_PB_NO" PRIMARY KEY ("PB_NO")
+  USING INDEX PCTFREE 10 INITRANS 20 MAXTRANS 255 
+  TABLESPACE "DATA"  ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table TMI_PLANNER_BOARD
+--------------------------------------------------------
+
+  ALTER TABLE "ADMIN"."TMI_PLANNER_BOARD" ADD CONSTRAINT "FK_PLANNER_BOARD_P_NO" FOREIGN KEY ("PB_P_NO")
+	  REFERENCES "ADMIN"."TMI_PLANNER" ("P_NO") ON DELETE SET NULL ENABLE;
+  ALTER TABLE "ADMIN"."TMI_PLANNER_BOARD" ADD CONSTRAINT "FK_PLANNER_BOARD_M_EMAIL" FOREIGN KEY ("PB_M_EMAIL")
+	  REFERENCES "ADMIN"."TMI_MEMBER" ("M_EMAIL") ON DELETE CASCADE ENABLE;
