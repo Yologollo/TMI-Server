@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 목요일-8월-18-2022   
+--  파일이 생성됨 - 금요일-8월-26-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TMI_MEMBER
@@ -22,19 +22,17 @@
   TABLESPACE "DATA" ;
 REM INSERTING into ADMIN.TMI_MEMBER
 SET DEFINE OFF;
+Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (251,'yoonseo.common@gmail.com','삼냥집사','$2a$10$Dq1jHd8SX3DvmHjaVgQ4Y.Uu1P4gvnJxIO94ieLZsd5KFcpWWMUIS','최윤서','01012341234',to_date('22/08/23','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (145,'danji@naver.com','뚱단지','$2a$10$gJ8gy68uQ8OkgfbamaMbFuvIZBFQK/gJ8R0ySzPWq5P0G2CpkgyQW','최단지','01012341234',to_date('22/08/07','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (148,'bsj1234@naver.com','박서준','$2a$10$jbR85SR.Zov46aCDFyXzM.kFK97HCcTIqW9fpaIE52hA8Q/WAKzOO','박서준','01012341234',to_date('22/08/07','RR/MM/DD'));
+Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (148,'bsj1234@naver.com','박서준','$2a$10$.dqpgfccHZYzqgypfgCEieScq4Za/hI/MGf7E5H2yXkJH5GkDtzp2','박서준','01012341234',to_date('22/08/07','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (150,'jdh1234@naver.com','헤이즈','$2a$10$aC5RhqHvROdxjDATaZ1sWuNc4zOa6pB/SigyLe8upUQwYeDdaPLki','장다혜','01012341234',to_date('22/08/09','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (151,'ey1225@naver.com','벤','$2a$10$sHGQePjPn1OBpgvsxW8OueYH9rw9O7hBhB3ZqVA.JdTGDSSZlKvBC','이은영','01024243535',to_date('22/08/09','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (152,'ym123@naver.com','용민이','$2a$10$NpcQaEykrJPgVEJruCCWxu3AGZEWo.jLHMwiSvZdsNILDYbGdUbIa','김용민','01000000000',to_date('22/08/09','RR/MM/DD'));
+Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (152,'ym123@naver.com','용민이','$2a$10$fB05k22fHAPfZ57j0hMrKuJFFF1.e0wLqcdFGYUFLxNyIk/6CyCXy','김용민','01000000000',to_date('22/08/09','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (71,'admin@naver.com','관리자','$2a$10$NpcQaEykrJPgVEJruCCWxu3AGZEWo.jLHMwiSvZdsNILDYbGdUbIa','관리자','01000000000',to_date('22/08/05','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (72,'ym1234@naver.com','김용민','$2a$10$NpcQaEykrJPgVEJruCCWxu3AGZEWo.jLHMwiSvZdsNILDYbGdUbIa','ym1234','01000000000',to_date('22/08/05','RR/MM/DD'));
+Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (72,'ym1234@naver.com','김용민','$2a$10$9Z1U5AfOIweeEm6LiVI95.2uTRnyw5sulO0bMmXlkyWnuHGOPEm4e','용민잉잉','01000000004',to_date('22/08/05','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (73,'ks1234@naver.com','이경석','$2a$10$NpcQaEykrJPgVEJruCCWxu3AGZEWo.jLHMwiSvZdsNILDYbGdUbIa','ks1234','01000000000',to_date('22/08/05','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (169,'susu@naver.com','수수해','$2a$10$glTEdNXuriwnGl0vYdzeke9DCfZwPHbudJpuPYwG7TQNp5nRhFwOy','김수수','01012341234',to_date('22/08/09','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (75,'mj1234@naver.com','권민지','$2a$10$NpcQaEykrJPgVEJruCCWxu3AGZEWo.jLHMwiSvZdsNILDYbGdUbIa','mj1234','01000000000',to_date('22/08/05','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (76,'ic1234@naver.com','전인찬','$2a$10$NpcQaEykrJPgVEJruCCWxu3AGZEWo.jLHMwiSvZdsNILDYbGdUbIa','ic1234','01000000000',to_date('22/08/05','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (77,'th1234@naver.com','안태현','$2a$10$NpcQaEykrJPgVEJruCCWxu3AGZEWo.jLHMwiSvZdsNILDYbGdUbIa','th1234','01000000000',to_date('22/08/05','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (78,'test1111@naver.com','테스트1','$2a$10$NpcQaEykrJPgVEJruCCWxu3AGZEWo.jLHMwiSvZdsNILDYbGdUbIa','test1111','01000000000',to_date('22/08/05','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (125,'TMI@gmail.com','이아엠티','$2a$10$NqyEATUKYfhm1Ny3Xe9QbOx3rwPE0vRsrjHbaGdLAr3UlP9EwELQa','티엠아이','01012349876',to_date('22/08/06','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (146,'dmin@naver.com','드드민','$2a$10$S0hwPdWyzhB13VmiXFynuugR5RMcvHfPt.S5NxMd7UfDWN9P2Zxom','이드민','01011112233',to_date('22/08/07','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (81,'honggd@naver.com','홍홍홍','$2a$10$EXTuRLRjK1z5DxbngxRhcOv74jtWGcspNLssI0sOvj2gGLs8a/OEO','홍길동','01000000000',to_date('22/08/05','RR/MM/DD'));
@@ -42,14 +40,10 @@ Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (147,'tan1234@naver.com','탄왕자','$2a$10$7YBrrMRAEZFDsreQpMLyje1lAqkgkrQrYoKesS1PVz./N7a0oE/cq','최탄','01012341234',to_date('22/08/07','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (149,'ml1234@naver.com','멜로망스','$2a$10$h90/YkQ5BKh/N8iPNeQ71.Izs0UH21U.0EUL5eDY/7TyIMCqxHIA.','김멜로','01012341234',to_date('22/08/09','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (74,'ys1234@naver.com','최윤서','$2a$10$NpcQaEykrJPgVEJruCCWxu3AGZEWo.jLHMwiSvZdsNILDYbGdUbIa','ys1234','01000000000',to_date('22/08/05','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (171,'bbob@naver.com','언니들','$2a$10$cioWla6xxJPodphV9x3EYursTl2JWToHt5lyC9joVGXtRQlpr0eu6','김밥맛','01098779877',to_date('22/08/09','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (172,'hb1234@naver.com','히밥','$2a$10$czi8ALh1GSp9gbOa7WJoUeD3HpXxAyaMm8KmbD4v5TMIVv6t2MgOu','김히밥','01012341234',to_date('22/08/09','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (190,'ggy3381@naver.com','이방인','$2a$10$AQod//85GbV.2lPNMozH/OlikJfSfm2AxZI7BtKFZoXulF/0SYxeC','안태현','01076563381',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (170,'rjqnrdl@naver.com','꼬부기','$2a$10$cbQvotzgQ3Vv2INwOUaJXeamLiVTaIAdSsCxItGIVv8XC.lVVfyqa','김꼬북','01012341234',to_date('22/08/09','RR/MM/DD'));
+Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (250,'o0o0526@naver.com','윤서','$2a$10$6CZt42iB3IjBsBw6YhsBRegpTUgtsyHZUR5w0Wmj5TTnpDehZFOn6','최윤서','01099919991',to_date('22/08/23','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (173,'cat1234@naver.com','냥아치','$2a$10$4d.Lz8c8WDdOTwFHgaFM8OeRy0ZczRFFed7PfByUvW6QDYBp6zrfu','고먐미','01012341234',to_date('22/08/09','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (175,'hari1234@naver.com','하리쨩','$2a$10$DGRdiHtg5/DH4N4d4DNLo.lBeae7FwixNUE08ERU4Gpg6TvLWb91W','임하리','01087487222',to_date('22/08/09','RR/MM/DD'));
 Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (189,'dddks1234@naver.com','아무무','$2a$10$Yjbs/EevAX.JK6wpLJ7ONOdVvWEYtGfxrixrxKnoexxmb5VPqP83G','아무개','01054546223',to_date('22/08/10','RR/MM/DD'));
-Insert into ADMIN.TMI_MEMBER (M_NO,M_EMAIL,M_NICKNAME,M_PASSWORD,M_NAME,M_PHONE,M_CREATED_AT) values (174,'egg1234@naver.com','노른자','$2a$10$qkjiadYIIj/7PHqrsvufj.5uve069G8hCxJXo6AP3Cd3b1icJYE9u','김계란','01012345555',to_date('22/08/09','RR/MM/DD'));
 --------------------------------------------------------
 --  DDL for Index PK_M_EMAIL
 --------------------------------------------------------

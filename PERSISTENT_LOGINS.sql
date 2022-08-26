@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 목요일-8월-18-2022   
+--  파일이 생성됨 - 금요일-8월-26-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table PERSISTENT_LOGINS
@@ -19,7 +19,7 @@
   TABLESPACE "DATA" ;
 REM INSERTING into ADMIN.PERSISTENT_LOGINS
 SET DEFINE OFF;
-Insert into ADMIN.PERSISTENT_LOGINS (USERNAME,SERIES,TOKEN,LAST_USED) values ('TMI@gmail.com','B0mzEN7E8NQt+vMMbGUxFg==','yMSRwHnJJuMww6wdrGT+Sw==',to_timestamp('22/08/16 00:20:55.141000000','RR/MM/DD HH24:MI:SSXFF'));
+Insert into ADMIN.PERSISTENT_LOGINS (USERNAME,SERIES,TOKEN,LAST_USED) values ('tour@gmail.com','ZxU9m/y0tYfdtK1EjRlwXw==','sOHA3HWWesNq2AqTCA4iZg==',to_timestamp('22/08/19 12:15:06.654000000','RR/MM/DD HH24:MI:SSXFF'));
 --------------------------------------------------------
 --  DDL for Index SYS_C0042334
 --------------------------------------------------------

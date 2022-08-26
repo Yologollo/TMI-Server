@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 목요일-8월-18-2022   
+--  파일이 생성됨 - 금요일-8월-26-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TMI_CHAT_ROOM
@@ -21,12 +21,9 @@
   TABLESPACE "DATA" ;
 REM INSERTING into ADMIN.TMI_CHAT_ROOM
 SET DEFINE OFF;
-Insert into ADMIN.TMI_CHAT_ROOM (CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,LAST_CHECK,CREATED_AT,DELETED_AT) values ('6etYO2E4','ym1234@naver.com','ys1234@naver.com',0,to_date('22/08/17','RR/MM/DD'),null);
-Insert into ADMIN.TMI_CHAT_ROOM (CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,LAST_CHECK,CREATED_AT,DELETED_AT) values ('6Q0j1m1e','jdh1234@naver.com','ys1234@naver.com',0,to_date('22/08/17','RR/MM/DD'),null);
-Insert into ADMIN.TMI_CHAT_ROOM (CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,LAST_CHECK,CREATED_AT,DELETED_AT) values ('E36S277u','ys1234@naver.com','ys1234@naver.com',0,to_date('22/08/17','RR/MM/DD'),null);
-Insert into ADMIN.TMI_CHAT_ROOM (CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,LAST_CHECK,CREATED_AT,DELETED_AT) values ('M4785A08','ys1234@naver.com','honggd@naver.com',0,to_date('22/08/17','RR/MM/DD'),null);
-Insert into ADMIN.TMI_CHAT_ROOM (CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,LAST_CHECK,CREATED_AT,DELETED_AT) values ('f9qxt1Pc','ym1234@naver.com','honggd@naver.com',0,to_date('22/08/16','RR/MM/DD'),null);
-Insert into ADMIN.TMI_CHAT_ROOM (CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,LAST_CHECK,CREATED_AT,DELETED_AT) values ('WizN3xSK','ys1234@naver.com','admin@naver.com',0,to_date('22/08/16','RR/MM/DD'),null);
+Insert into ADMIN.TMI_CHAT_ROOM (CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,LAST_CHECK,CREATED_AT,DELETED_AT) values ('gecJ382r','ys1234@naver.com','honggd@naver.com',0,to_date('22/08/18','RR/MM/DD'),null);
+Insert into ADMIN.TMI_CHAT_ROOM (CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,LAST_CHECK,CREATED_AT,DELETED_AT) values ('440nICD9','honggd@naver.com','ks1234@naver.com',0,to_date('22/08/19','RR/MM/DD'),null);
+Insert into ADMIN.TMI_CHAT_ROOM (CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,LAST_CHECK,CREATED_AT,DELETED_AT) values ('47Xy0v00','ys1234@naver.com','ym1234@naver.com',0,to_date('22/08/25','RR/MM/DD'),null);
 --------------------------------------------------------
 --  DDL for Index PK_CHAT_ROOM
 --------------------------------------------------------

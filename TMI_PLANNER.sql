@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 목요일-8월-18-2022   
+--  파일이 생성됨 - 금요일-8월-26-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TMI_PLANNER
@@ -22,16 +22,27 @@
   TABLESPACE "DATA" ;
 REM INSERTING into ADMIN.TMI_PLANNER
 SET DEFINE OFF;
-Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (301,'ym1234@naver.com','2','1',to_date('22/08/02','RR/MM/DD'),to_date('22/08/04','RR/MM/DD'),to_date('22/08/16','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (478,'TMI@gmail.com','수료 후, 여름 여행','혼자의 혼자만의 혼자를 위한 시간',to_date('22/08/30','RR/MM/DD'),to_date('22/09/01','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
 Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (272,'ym1234@naver.com','테스트 일정',null,to_date('22/09/01','RR/MM/DD'),to_date('22/09/05','RR/MM/DD'),to_date('22/08/15','RR/MM/DD'));
-Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (300,'ym1234@naver.com','ㅅ','1',to_date('22/08/05','RR/MM/DD'),to_date('22/08/07','RR/MM/DD'),to_date('22/08/16','RR/MM/DD'));
-Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (302,'ym1234@naver.com','ㅋㄴㅇㅁㄴ',null,to_date('22/08/02','RR/MM/DD'),to_date('22/08/05','RR/MM/DD'),to_date('22/08/16','RR/MM/DD'));
-Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (303,'ym1234@naver.com','test',null,to_date('22/08/03','RR/MM/DD'),to_date('22/08/05','RR/MM/DD'),to_date('22/08/16','RR/MM/DD'));
-Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (304,'ym1234@naver.com','ㅇㅁㄴㅇㅁ',null,to_date('22/08/03','RR/MM/DD'),to_date('22/08/04','RR/MM/DD'),to_date('22/08/16','RR/MM/DD'));
-Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (278,'ym1234@naver.com','test',null,to_date('22/08/01','RR/MM/DD'),to_date('22/08/03','RR/MM/DD'),to_date('22/08/16','RR/MM/DD'));
-Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (298,'ym1234@naver.com','ㅅㄷㄴㅅ',null,to_date('22/08/03','RR/MM/DD'),to_date('22/08/11','RR/MM/DD'),to_date('22/08/16','RR/MM/DD'));
-Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (299,'ym1234@naver.com','1',null,to_date('22/08/02','RR/MM/DD'),to_date('22/08/05','RR/MM/DD'),to_date('22/08/16','RR/MM/DD'));
-Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (305,'honggd@naver.com','asd','asd',to_date('22/08/17','RR/MM/DD'),to_date('22/08/19','RR/MM/DD'),to_date('22/08/17','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (418,'honggd@naver.com','테스투 ~','ㅋㅋ',to_date('22/08/01','RR/MM/DD'),to_date('22/08/03','RR/MM/DD'),null);
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (419,'honggd@naver.com','테스트 일정',null,to_date('22/09/01','RR/MM/DD'),to_date('22/09/05','RR/MM/DD'),null);
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (420,'honggd@naver.com','테스투 ~','ㅋㅋ',to_date('22/08/01','RR/MM/DD'),to_date('22/08/03','RR/MM/DD'),null);
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (461,'ym1234@naver.com','용민이와 두근두근 홍대 데이트','^^',to_date('22/09/01','RR/MM/DD'),to_date('22/09/03','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (467,'ym1234@naver.com','야구','야구장 존잼',to_date('22/08/27','RR/MM/DD'),to_date('22/08/28','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (0,'admin@naver.com','0',null,to_date('22/08/18','RR/MM/DD'),to_date('22/08/18','RR/MM/DD'),null);
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (451,'honggd@naver.com','asd','asd',to_date('22/09/01','RR/MM/DD'),to_date('22/09/07','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (453,'honggd@naver.com','ㅁㄴㅇ','ㅇㅇ',to_date('22/08/01','RR/MM/DD'),to_date('22/08/04','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (454,'ys1234@naver.com','종강 파뤼',null,to_date('22/08/29','RR/MM/DD'),to_date('22/08/31','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (455,'mj1234@naver.com','떠나요~','이야',to_date('22/09/03','RR/MM/DD'),to_date('22/09/07','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (472,'ym1234@naver.com','강사님 보러가는 날','반가워요',to_date('22/08/29','RR/MM/DD'),to_date('22/08/30','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (463,'ym1234@naver.com','용민이와 두근두근 부천 데이트','부천으로 놀러오세요',to_date('22/08/29','RR/MM/DD'),to_date('22/08/30','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (465,'munji@naver.com','바다조아',null,to_date('22/09/01','RR/MM/DD'),to_date('22/09/08','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (466,'munji@naver.com','용민이와 두근두근 부천 데이트','부천으로 놀러오세요',to_date('22/08/29','RR/MM/DD'),to_date('22/08/30','RR/MM/DD'),null);
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (399,'ys1234@naver.com','여름 휴가',null,to_date('22/08/30','RR/MM/DD'),to_date('22/09/03','RR/MM/DD'),to_date('22/08/22','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (470,'ys1234@naver.com','먹방여행',null,to_date('22/08/29','RR/MM/DD'),to_date('22/08/31','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (473,'danji@naver.com','제주도 여행',null,to_date('22/09/06','RR/MM/DD'),to_date('22/09/08','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (475,'danji@naver.com','강릉여행',null,to_date('22/09/01','RR/MM/DD'),to_date('22/09/03','RR/MM/DD'),to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_PLANNER (P_NO,P_M_EMAIL,P_TITLE,P_EXPLAN,P_LEAVE_DATE,P_RETURN_DATE,P_WRITE_DATE) values (426,'ym1234@naver.com','힝','ㅋ',to_date('22/09/01','RR/MM/DD'),to_date('22/09/03','RR/MM/DD'),to_date('22/08/22','RR/MM/DD'));
 --------------------------------------------------------
 --  DDL for Index PK_P_NO
 --------------------------------------------------------

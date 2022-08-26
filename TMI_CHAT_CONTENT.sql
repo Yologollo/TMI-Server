@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 목요일-8월-18-2022   
+--  파일이 생성됨 - 금요일-8월-26-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TMI_CHAT_CONTENT
@@ -11,7 +11,7 @@
 	"SEND_EMAIL" VARCHAR2(256 BYTE) COLLATE "USING_NLS_COMP", 
 	"RECEIVE_EMAIL" VARCHAR2(256 BYTE) COLLATE "USING_NLS_COMP", 
 	"MESSAGE_CONTENT" VARCHAR2(4000 BYTE) COLLATE "USING_NLS_COMP", 
-	"MESSAGE_TIME" DATE
+	"MESSAGE_TIME" DATE DEFAULT sysdate
    )  DEFAULT COLLATION "USING_NLS_COMP" SEGMENT CREATION IMMEDIATE 
   PCTFREE 10 PCTUSED 40 INITRANS 10 MAXTRANS 255 
  NOCOMPRESS LOGGING
@@ -21,59 +21,89 @@
   TABLESPACE "DATA" ;
 REM INSERTING into ADMIN.TMI_CHAT_CONTENT
 SET DEFINE OFF;
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (101,'WizN3xSK','admin@naver.com','ys1234@naver.com','aaaaaaaaaa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (102,'WizN3xSK','admin@naver.com','ys1234@naver.com','sadadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (103,'WizN3xSK','admin@naver.com','ys1234@naver.com','asdasdas',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (104,'WizN3xSK','ys1234@naver.com','admin@naver.com','asdasdaadsads',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (105,'WizN3xSK','ys1234@naver.com','admin@naver.com','asdasdasasdasd',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (106,'WizN3xSK','admin@naver.com','ys1234@naver.com','asdasdasd',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (107,'WizN3xSK','admin@naver.com','ys1234@naver.com','asdadasd',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (108,'WizN3xSK','ys1234@naver.com','admin@naver.com','asdadadas',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (109,'6etYO2E4','ym1234@naver.com','ys1234@naver.com','zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (110,'6etYO2E4','ym1234@naver.com','ys1234@naver.com','최근메세지',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (111,'6Q0j1m1e','jdh1234@naver.com','ys1234@naver.com','adadsadasdsadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (56,'M4785A08','ys1234@naver.com','honggd@naver.com','sdaddsadasd',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (57,'M4785A08','ys1234@naver.com','honggd@naver.com','dsadsdsaa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (58,'M4785A08','ys1234@naver.com','honggd@naver.com','asdsadasdsad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (59,'M4785A08','ys1234@naver.com','honggd@naver.com','asdsadadads',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (60,'M4785A08','ys1234@naver.com','honggd@naver.com','asdadasdad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (61,'M4785A08','ys1234@naver.com','honggd@naver.com','dsadasdsadsadsadsadsadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (62,'M4785A08','ys1234@naver.com','honggd@naver.com','asdads',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (63,'M4785A08','ys1234@naver.com','honggd@naver.com','asdadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (64,'M4785A08','ys1234@naver.com','honggd@naver.com','asdadsada',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (65,'M4785A08','honggd@naver.com','ys1234@naver.com','??',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (66,'M4785A08','ys1234@naver.com','honggd@naver.com','zzzzzasdas',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (67,'M4785A08','honggd@naver.com','ys1234@naver.com','asdadsad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (70,'M4785A08','ys1234@naver.com','honggd@naver.com','asdsada',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (71,'M4785A08','honggd@naver.com','ys1234@naver.com','asdadsadad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (72,'M4785A08','honggd@naver.com','ys1234@naver.com','asdsadas',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (73,'M4785A08','honggd@naver.com','ys1234@naver.com','asdsadadsadsada',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (74,'M4785A08','ys1234@naver.com','honggd@naver.com','asdsdsad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (75,'M4785A08','honggd@naver.com','ys1234@naver.com','1234321321321',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (76,'M4785A08','honggd@naver.com','ys1234@naver.com','asdsadsad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (77,'M4785A08','honggd@naver.com','ys1234@naver.com','sadadsadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (78,'M4785A08','ys1234@naver.com','honggd@naver.com','asdadsadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (79,'M4785A08','ys1234@naver.com','honggd@naver.com','asdadada',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (80,'M4785A08','honggd@naver.com','ys1234@naver.com','asdadsadsadsadsad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (81,'M4785A08','honggd@naver.com','ys1234@naver.com','asdadsadsadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (82,'M4785A08','honggd@naver.com','ys1234@naver.com','asdadsadsada',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (83,'M4785A08','honggd@naver.com','ys1234@naver.com','asdsada',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (84,'M4785A08','ys1234@naver.com','honggd@naver.com','asdasdsadsadadada',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (85,'M4785A08','ys1234@naver.com','honggd@naver.com','asdsadsadsad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (86,'M4785A08','honggd@naver.com','ys1234@naver.com','asdadadad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (87,'M4785A08','honggd@naver.com','ys1234@naver.com','asdadadsadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (88,'M4785A08','ys1234@naver.com','honggd@naver.com','saddadsadada',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (89,'M4785A08','ys1234@naver.com','honggd@naver.com','asdadsadsadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (90,'M4785A08','honggd@naver.com','ys1234@naver.com','asdadadad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (91,'M4785A08','ys1234@naver.com','honggd@naver.com','asdsadsadsad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (92,'M4785A08','ys1234@naver.com','honggd@naver.com','asdasdsadsad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (51,'M4785A08','ys1234@naver.com','honggd@naver.com','sdasadsadsadsadsadas',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (52,'M4785A08','ys1234@naver.com','honggd@naver.com','zzzzzzzzzzzzzzzzzzzzzzzzzzzzzz',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (68,'M4785A08','ys1234@naver.com','honggd@naver.com','ㅇㅁㄴㅁㄴㅇㅁㅇㄴ',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (69,'M4785A08','ys1234@naver.com','honggd@naver.com','ㅁㄴㅇㅁㄴㅇㅇ',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (53,'M4785A08','ys1234@naver.com','honggd@naver.com','asdsadasdadsadsadsad',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (54,'M4785A08','honggd@naver.com','ys1234@naver.com','asdadsadsadadsa',to_date('22/08/17','RR/MM/DD'));
-Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (55,'M4785A08','honggd@naver.com','ys1234@naver.com','dadsdasdsadasdasdsa',to_date('22/08/17','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (65,'gecJ382r','ys1234@naver.com','honggd@naver.com','zzzz',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (124,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (114,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (115,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅁㄴㅇㅁㅇㅁㅇ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (116,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅇㅇㅇㅇ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (117,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅁㄴㅇㅁㄴㅇ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (122,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (123,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (125,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (126,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (127,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (128,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (129,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (130,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (133,'gecJ382r','honggd@naver.com','ys1234@naver.com','asdada',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (134,'gecJ382r','honggd@naver.com','ys1234@naver.com','asdadsada',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (136,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅁ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (137,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅁㄴ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (138,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㄴㅇ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (139,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅇㅁ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (140,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅁㅇ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (141,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅇㄴ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (142,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㄴㅁ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (143,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅁㅇ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (144,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅇㄴ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (145,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㄴㅇ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (146,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅇㅁ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (147,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅁㅁ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (148,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅋㅋㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (149,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅋㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (150,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅋㅋㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (151,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅇㅁㄴㅇㄴㅁㅇㅁㄴ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (152,'440nICD9','honggd@naver.com','ks1234@naver.com','ㄴㅁㅇㅁㄴㅇㄴㅁㅇㅁㄴㅇㅇㄴㅁ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (153,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅁㄴㅇㅁㄴㅇㄴㅁㅇㄴㅁㅁㄴㅇ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (154,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅋㅋㅋㅋ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (155,'440nICD9','honggd@naver.com','ks1234@naver.com','ㅁㄴㅇㄴㅁㅇㄴㅁ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (156,'440nICD9','honggd@naver.com','ks1234@naver.com','ㄴㄴㄴㄴ',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (157,'440nICD9','honggd@naver.com','ks1234@naver.com','아니',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (158,'440nICD9','honggd@naver.com','ks1234@naver.com','구우우웃',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (159,'440nICD9','honggd@naver.com','ks1234@naver.com','하아아아잇',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (160,'440nICD9','honggd@naver.com','ks1234@naver.com','좋아',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (161,'440nICD9','honggd@naver.com','ks1234@naver.com','굿굿',to_date('22/08/20','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (287,'47Xy0v00','ys1234@naver.com','ym1234@naver.com','ㅋㅋㅋㅋㅋㅋ',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (289,'47Xy0v00','ys1234@naver.com','ym1234@naver.com','ㅋㅋ',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (269,'gecJ382r','ys1234@naver.com','honggd@naver.com','zz',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (270,'gecJ382r','ys1234@naver.com','honggd@naver.com','di',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (273,'gecJ382r','honggd@naver.com','ys1234@naver.com','asdaqd',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (274,'gecJ382r','ys1234@naver.com','honggd@naver.com','asdsaa',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (275,'gecJ382r','honggd@naver.com','ys1234@naver.com','asdsads',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (276,'47Xy0v00','ys1234@naver.com','ym1234@naver.com','gd',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (277,'47Xy0v00','ys1234@naver.com','ym1234@naver.com','하이',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (279,'47Xy0v00','ys1234@naver.com','ym1234@naver.com','하이',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (281,'47Xy0v00','ys1234@naver.com','ym1234@naver.com','ㅁㅁㅁ',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (283,'47Xy0v00','ys1234@naver.com','ym1234@naver.com','ㄴㄴ',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (271,'gecJ382r','honggd@naver.com','ys1234@naver.com','ss',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (272,'gecJ382r','ys1234@naver.com','honggd@naver.com','asdasd',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (66,'gecJ382r','ys1234@naver.com','honggd@naver.com','야',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (67,'gecJ382r','honggd@naver.com','ys1234@naver.com','왜',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (68,'gecJ382r','ys1234@naver.com','honggd@naver.com','뭐냐',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (69,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (70,'gecJ382r','ys1234@naver.com','honggd@naver.com','ㅋㅋㅋㅋ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (71,'gecJ382r','ys1234@naver.com','honggd@naver.com','ㅋㅋㅋㅋ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (72,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋㅋㅋ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (73,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋㅋ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (74,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋㅋㅇㅋㅇㅋ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (75,'gecJ382r','ys1234@naver.com','honggd@naver.com','뭔데',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (76,'gecJ382r','honggd@naver.com','ys1234@naver.com','ㅋㅋ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (98,'gecJ382r','honggd@naver.com','ys1234@naver.com','ggzdzasddsasad',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (2,'gecJ382r','ys1234@naver.com','honggd@naver.com','sddss',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (3,'gecJ382r','ys1234@naver.com','honggd@naver.com','dsadasdsaadsasd',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (4,'gecJ382r','ys1234@naver.com','honggd@naver.com','하아ㅣㅣ아니암',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (5,'gecJ382r','ys1234@naver.com','honggd@naver.com','안녕',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (6,'gecJ382r','ys1234@naver.com','honggd@naver.com','ㄴㅇㅁㅇㄴ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (14,'gecJ382r','ys1234@naver.com','honggd@naver.com','그럼이제 됌"?',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (15,'gecJ382r','ys1234@naver.com','honggd@naver.com','이렇게 보낼때',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (16,'gecJ382r','ys1234@naver.com','honggd@naver.com','ㅁㄹ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (17,'gecJ382r','ys1234@naver.com','honggd@naver.com','ㅁㅋㅋㅋ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (18,'gecJ382r','ys1234@naver.com','honggd@naver.com','ㅇㅇㅇ',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (24,'gecJ382r','ys1234@naver.com','honggd@naver.com','zzzzzzzzzzzzzz',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (26,'gecJ382r','ys1234@naver.com','honggd@naver.com','zzz',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (29,'gecJ382r','ys1234@naver.com','honggd@naver.com','zzz',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (31,'gecJ382r','ys1234@naver.com','honggd@naver.com','zzzzz',to_date('22/08/19','RR/MM/DD'));
+Insert into ADMIN.TMI_CHAT_CONTENT (CONTENT_NO,CHATROOM_ID,SEND_EMAIL,RECEIVE_EMAIL,MESSAGE_CONTENT,MESSAGE_TIME) values (32,'gecJ382r','ys1234@naver.com','honggd@naver.com','왜 바로바로 출력이 안돼는거야',to_date('22/08/19','RR/MM/DD'));
 --------------------------------------------------------
 --  DDL for Index PK_CHAT_CONTENT
 --------------------------------------------------------

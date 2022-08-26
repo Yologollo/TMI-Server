@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 목요일-8월-18-2022   
+--  파일이 생성됨 - 금요일-8월-26-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TMI_REVIEW_BOARD_ATTACHMENT
@@ -20,9 +20,9 @@
   TABLESPACE "DATA" ;
 REM INSERTING into ADMIN.TMI_REVIEW_BOARD_ATTACHMENT
 SET DEFINE OFF;
-Insert into ADMIN.TMI_REVIEW_BOARD_ATTACHMENT (RBA_NO,RBA_RB_NO,RBA_ORIGINAL_FILENAME,RBA_RENAMED_FILENAME,RBA_CREATED_AT) values (1,11,'test.jpg','20200525_090909_123.jpg',to_date('22/08/14','RR/MM/DD'));
-Insert into ADMIN.TMI_REVIEW_BOARD_ATTACHMENT (RBA_NO,RBA_RB_NO,RBA_ORIGINAL_FILENAME,RBA_RENAMED_FILENAME,RBA_CREATED_AT) values (2,10,'moon.jpg','20200525_090909_345.jpg',to_date('22/08/14','RR/MM/DD'));
-Insert into ADMIN.TMI_REVIEW_BOARD_ATTACHMENT (RBA_NO,RBA_RB_NO,RBA_ORIGINAL_FILENAME,RBA_RENAMED_FILENAME,RBA_CREATED_AT) values (3,9,'sun.jpg','20200525_020425_345.jpg',to_date('22/08/14','RR/MM/DD'));
+Insert into ADMIN.TMI_REVIEW_BOARD_ATTACHMENT (RBA_NO,RBA_RB_NO,RBA_ORIGINAL_FILENAME,RBA_RENAMED_FILENAME,RBA_CREATED_AT) values (82,75,'KakaoTalk_20220825_231249161.jpg','20220825_231345825_781.jpg',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_REVIEW_BOARD_ATTACHMENT (RBA_NO,RBA_RB_NO,RBA_ORIGINAL_FILENAME,RBA_RENAMED_FILENAME,RBA_CREATED_AT) values (83,76,'KakaoTalk_20220825_231605235.jpg','20220825_231643703_734.jpg',to_date('22/08/25','RR/MM/DD'));
+Insert into ADMIN.TMI_REVIEW_BOARD_ATTACHMENT (RBA_NO,RBA_RB_NO,RBA_ORIGINAL_FILENAME,RBA_RENAMED_FILENAME,RBA_CREATED_AT) values (61,72,'fish.png','20220825_011807557_569.png',to_date('22/08/24','RR/MM/DD'));
 --------------------------------------------------------
 --  DDL for Index PK_RBA_NO
 --------------------------------------------------------

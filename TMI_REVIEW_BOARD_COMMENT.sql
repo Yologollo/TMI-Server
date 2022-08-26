@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 목요일-8월-18-2022   
+--  파일이 생성됨 - 금요일-8월-26-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TMI_REVIEW_BOARD_COMMENT
@@ -20,8 +20,9 @@
   TABLESPACE "DATA" ;
 REM INSERTING into ADMIN.TMI_REVIEW_BOARD_COMMENT
 SET DEFINE OFF;
-Insert into ADMIN.TMI_REVIEW_BOARD_COMMENT (RBC_NO,RBC_RB_NO,RBC_M_EMAIL,RBC_CREATED_AT,RBC_CONTENT) values (3,11,'honggd@naver.com',to_date('22/08/14','RR/MM/DD'),'댓글 테스트');
-Insert into ADMIN.TMI_REVIEW_BOARD_COMMENT (RBC_NO,RBC_RB_NO,RBC_M_EMAIL,RBC_CREATED_AT,RBC_CONTENT) values (4,10,'admin@naver.com',to_date('22/08/14','RR/MM/DD'),'댓글 테스트2');
+Insert into ADMIN.TMI_REVIEW_BOARD_COMMENT (RBC_NO,RBC_RB_NO,RBC_M_EMAIL,RBC_CREATED_AT,RBC_CONTENT) values (41,68,'admin@naver.com',to_date('22/08/24','RR/MM/DD'),'asd');
+Insert into ADMIN.TMI_REVIEW_BOARD_COMMENT (RBC_NO,RBC_RB_NO,RBC_M_EMAIL,RBC_CREATED_AT,RBC_CONTENT) values (42,68,'admin@naver.com',to_date('22/08/24','RR/MM/DD'),'asdasd');
+Insert into ADMIN.TMI_REVIEW_BOARD_COMMENT (RBC_NO,RBC_RB_NO,RBC_M_EMAIL,RBC_CREATED_AT,RBC_CONTENT) values (43,68,'admin@naver.com',to_date('22/08/24','RR/MM/DD'),'asdsd');
 --------------------------------------------------------
 --  DDL for Index PK_RBC_NO
 --------------------------------------------------------

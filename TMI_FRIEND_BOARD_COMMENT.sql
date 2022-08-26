@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  파일이 생성됨 - 목요일-8월-18-2022   
+--  파일이 생성됨 - 금요일-8월-26-2022   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Table TMI_FRIEND_BOARD_COMMENT
@@ -20,11 +20,13 @@
   TABLESPACE "DATA" ;
 REM INSERTING into ADMIN.TMI_FRIEND_BOARD_COMMENT
 SET DEFINE OFF;
-Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (30,'honggd@naver.com',139,to_date('22/08/13','RR/MM/DD'),'테스트');
-Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (24,'honggd@naver.com',139,to_date('22/08/13','RR/MM/DD'),'테스트');
-Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (1,'honggd@naver.com',145,to_date('22/08/11','RR/MM/DD'),'댓글 테스트');
-Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (21,'honggd@naver.com',145,to_date('22/08/13','RR/MM/DD'),'테스트');
-Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (31,'honggd@naver.com',145,to_date('22/08/13','RR/MM/DD'),'댓글 테스트');
+Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (79,'ym1234@naver.com',266,to_date('22/08/22','RR/MM/DD'),'ㅇㅁㄴㅇㅁ');
+Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (81,'honggd@naver.com',267,to_date('22/08/22','RR/MM/DD'),'asd');
+Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (93,'ys1234@naver.com',283,to_date('22/08/25','RR/MM/DD'),'엥');
+Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (85,'honggd@naver.com',283,to_date('22/08/24','RR/MM/DD'),'ㅁㄴㅇㅁㄴㅇ');
+Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (86,'honggd@naver.com',283,to_date('22/08/24','RR/MM/DD'),'ㅁㄴㅇㅁㄴㅇ');
+Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (87,'honggd@naver.com',283,to_date('22/08/24','RR/MM/DD'),'ㅁㄴㅇㅁㄴㅇㅇㅁㄴㅇ');
+Insert into ADMIN.TMI_FRIEND_BOARD_COMMENT (FBC_NO,FBC_M_EMAIL,FBC_FB_NO,FBC_CREATED_AT,FBC_CONTENT) values (84,'ys1234@naver.com',266,to_date('22/08/22','RR/MM/DD'),'ㅋㅋ');
 --------------------------------------------------------
 --  DDL for Index PK_FBC_NO
 --------------------------------------------------------
